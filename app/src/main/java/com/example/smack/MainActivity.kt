@@ -1,5 +1,6 @@
 package com.example.smack
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -45,7 +46,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun loginBtnNavClicked(view: View){
-        Log.e(MainActivity::class.java.name, "login")
+        val loginIntent = Intent(this, LoginActivty::class.java)
+        startActivity(loginIntent)
     }
 
     fun addChannelClicked(view: View){
